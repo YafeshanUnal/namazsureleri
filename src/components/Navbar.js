@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-export const Navbar = () => {
+const Navbar = () => {
     return (
         <nav className="flex justify-end w-screen pt-4 pr-4">
             <ul className="flex gap-10">
@@ -28,3 +28,5 @@ export const Navbar = () => {
         </nav>
     )
 }
+
+export default Navbar
