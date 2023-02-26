@@ -17,7 +17,7 @@ export default function Sureler() {
 		<div className="">
 			{sureler.map((sure) => {
 				return (
-					<div className="flex flex-col gap-4 items-center justify-center" key={sure}>
+					<div className="flex flex-col gap-4 items-center justify-center" key={sure.id}>
 						<div className="flex flex-col gap-4 items-center justify-center">
 							<Image src={sure.image} alt={sure.name} className="w-[300px]"
 								width={300} height={300}
