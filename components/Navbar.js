@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 export const Navbar = () => {
     return (
@@ -5,7 +6,7 @@ export const Navbar = () => {
             <ul className="flex gap-10">
                 <li className="flex">
                     <Link href="/" className="flex items-center after:transition-all duration-500 ease-in-out transform hover:scale-110">
-                        <img src="home.svg"
+                        <Image width={24} height={24} src="home.svg"
                             className="w-6 h-6 mr-2 "
                             alt="Anasayfa" />
                         <span className="text-xl">
@@ -15,7 +16,7 @@ export const Navbar = () => {
                 </li>
                 <li className="flex">
                     <Link href="/sureler" className="flex items-center after:transition-all duration-500 ease-in-out transform hover:scale-110">
-                        <img src="quran.svg"
+                        <Image width={24} height={24} src="quran.svg"
                             className="w-6 h-6 mr-2"
                             alt="Anasayfa" />
                         <span className="text-xl">

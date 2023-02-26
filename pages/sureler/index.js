@@ -1,5 +1,5 @@
 import { Navbar } from "@/components/Navbar";
-
+import Image from "next/image";
 export default function Sureler() {
 	const sureler = [
 		{
@@ -19,7 +19,9 @@ export default function Sureler() {
 				return (
 					<div className="flex flex-col gap-4 items-center justify-center">
 						<div className="flex flex-col gap-4 items-center justify-center">
-							<img src={sure.image} alt={sure.name} className="w-[300px]" />
+							<Image src={sure.image} alt={sure.name} className="w-[300px]"
+								width={300} height={300}
+							/>
 							<h3 className="text-slate-400"><strong>Sure Adı: </strong>{sure.name}</h3>
 							<h3 className="text-slate-400"><strong>Ayet Sayısı: </strong>{sure.ayet}</h3>
 							<h3 className="text-slate-400"><strong>Arapçası: </strong>{sure.arapca}</h3>
