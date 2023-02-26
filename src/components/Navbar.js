@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 const Navbar = () => {
     return (
-        <nav className="flex justify-end w-screen pt-4 pr-4">
+        <nav className="flex justify-end w-screen p-4 mb-8 bg-slate-300 items-center">
             <ul className="flex gap-10">
                 <li className="flex">
                     <Link href="/" className="flex items-center after:transition-all duration-500 ease-in-out transform hover:scale-110">
