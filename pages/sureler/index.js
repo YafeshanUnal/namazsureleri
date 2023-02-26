@@ -1,4 +1,3 @@
-import { Navbar } from "@/components/Navbar";
 import Image from "next/image";
 export default function Sureler() {
 	const sureler = [
@@ -8,7 +7,7 @@ export default function Sureler() {
 			ayet: 7,
 			arapca: "بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ",
 			turkce: "Allah'ın adıyla, Rahman'ın, Rahim'in",
-			image: "fatiha.jpg",
+			image: "/fatiha.jpg",
 			voice: "fatiha.mp3",
 		},
 	];
