@@ -33,7 +33,6 @@ export default function Sureler() {
 		<div className="flex flex-col items-center justify-center w-full min-h-screen py-2">
 			<main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
 				<h1 className="text-2xl font-bold pb-4">Sureler</h1>
-				{sure.name}
 			</main>
 			{/* 
 			{active && (
