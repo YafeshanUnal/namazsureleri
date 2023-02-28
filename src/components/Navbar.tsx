@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 const Navbar = () => {
 	return (
-		<nav className="flex justify-end w-screen p-4 mb-8 bg-transparent items-center">
+		<nav className="flex justify-end w-screen p-4 mb-8 bg-transparent items-center fixed">
 			<ul className="flex gap-10">
 				<li className="flex">
 					<Link

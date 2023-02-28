@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
-import sure from "../store/slice";
+import sure from "./slice";
 export const store = configureStore({
-    reducer: {
-        sure: sure,
-    }
-})
+	reducer: {
+		sure: sure,
+	},
+});
