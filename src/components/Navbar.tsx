@@ -32,6 +32,13 @@ const Navbar = () => {
 						<span className="text-xl">Sureler</span>
 					</Link>
 				</li>
+				<li className="flex">
+					<Link
+						href="/tablo"
+						className="flex items-center after:transition-all duration-500 ease-in-out transform hover:scale-110">
+						<span className="text-xl">Kullanıcılar</span>
+					</Link>
+				</li>
 			</ul>
 		</nav>
 	);

@@ -72,9 +72,11 @@ export default function Home() {
 					<div className="flex flex-col items-center justify-center w-full h-1/2 text-2xl font-bold">
 						{/* date in gününü al ve ayı getir */}
 						<span className="flex text-2x font-medium space-x-2">
-							<p className="">{date.split("/")[0]}</p>
-							<p className="">{hicriMonth[parseInt(date.split("/")[1]) - 1]}</p>
-							<p className="">{date.split("/")[2]}</p>
+							<span className="">{date.split("/")[0]}</span>
+							<span className="">
+								{hicriMonth[parseInt(date.split("/")[1]) - 2]}
+							</span>
+							<span className="">{date.split("/")[2]}</span>
 						</span>
 					</div>
 				</div>
@@ -85,7 +87,7 @@ export default function Home() {
 					</h2>
 					<div className="flex items-center justify-center w-full h-1/2 text-2xl font-bold"></div>
 					<span className="flex text-2x font-medium space-x-2">
-						<p className="">{ramazanDay()}</p>
+						<span className="">{ramazanDay()}</span>
 					</span>
 				</div>
 			</div>
@@ -94,35 +96,35 @@ export default function Home() {
 				<div className="w-full">
 					<h2 className="mt-4 text-2xl font-bold">Bir Ayet</h2>
 					<div className="flex flex-col items-center justify-center w-full h-1/2 relative">
-						<p className="text-xl ">
+						<span className="text-xl ">
 							“Ey iman edenler, Allah’a karşı gelmeyin ve onu inkar etmeyin.
 							Çünkü Allah, sizin için saklanan şeyleri bilir. Siz de onun için
 							saklanan şeyleri bilirsiniz. Allah, her şeyi bilendir, her şeyi
 							görendir.”
-						</p>
-						<p className="text-xl ">- (Enbiya, 105)</p>
+						</span>
+						<span className="text-xl ">- (Enbiya, 105)</span>
 					</div>
 				</div>
 				<div className="w-full">
 					<h2 className="mt-4 text-2xl font-bold">Bir Hadis</h2>
 					<div className="flex flex-col items-center justify-center w-full h-1/2 relative">
-						<p className="text-xl">
+						<span className="text-xl">
 							“İnsanın en büyük ihtiyacı, Allah’ın rızasını kazanmaktır. İnsanın
 							en büyük zenginliği, Allah’ın rızasını kazanmaktır. İnsanın en
 							büyük korkusu, Allah’ın rızasını kaybetmektir. İnsanın en büyük
 							acısı, Allah’ın rızasını kaybetmektir.”
-						</p>
-						<p className="text-xl">- (İbn Mace)</p>
+						</span>
+						<span className="text-xl">- (İbn Mace)</span>
 					</div>
 				</div>
 				<div className="w-full">
 					<h2 className="mt-4 text-2xl font-bold">Bir Dua</h2>
 					<div className="flex flex-col items-center justify-center w-full h-1/2 relative">
-						<p className="text-xl">
+						<span className="text-xl">
 							“Ey Allahım! Senin rızanı kazanmak için, Senin rızanı kaybetmekten
 							daha büyük bir korku yoktur.
-						</p>
-						<p className="text-xl">- (İbn Mace)</p>
+						</span>
+						<span className="text-xl">- (İbn Mace)</span>
 					</div>
 				</div>
 			</div>

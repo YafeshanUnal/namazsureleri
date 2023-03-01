@@ -37,18 +37,28 @@ const initialState = {
 			},
 		],
 	},
+	namazVakitleri: {
+		imsak: "05:43",
+		gunes: "",
+		ogle: "",
+		ikindi: "",
+		aksam: "",
+		yatsi: "",
+	},
 };
 
 const slice = createSlice({
-	name: "sure",
+	name: "slice",
 	initialState,
 	reducers: {
 		setSure: (state, { payload }) => {
-			console.log("çağrı");
 			state.sure = payload;
+		},
+		setNamazVakitleri: (state, { payload }) => {
+			state.namazVakitleri = payload;
 		},
 	},
 });
 
-export const { setSure } = slice.actions;
+export const { setSure, setNamazVakitleri } = slice.actions;
 export default slice.reducer;
